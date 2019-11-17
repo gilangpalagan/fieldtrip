@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" viewBox="0 0 36 36" height="128" width="128" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <circle id="home-b" cx="18" cy="18" r="16"/>
+    <filter id="home-a" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="128" height="128" fill="#03FF00" opacity="0"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000" filter="url(#home-a)" xlink:href="#home-b"/>
+    <circle cx="18" cy="18" r="15" fill="#000" stroke="#FFF" stroke-linejoin="square" stroke-width="2"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M26.666,17.125 L18.375,8.834 C18.2755868,8.73446286 18.1406792,8.67853304 18,8.67853304 C17.8593208,8.67853304 17.7244132,8.73446286 17.625,8.834 L9.334,17.125 C9.23446286,17.2244132 9.17853304,17.3593208 9.17853304,17.5 C9.17853304,17.6406792 9.23446286,17.7755868 9.334,17.875 L10.313,18.854 C10.4069507,18.9477139 10.5343011,19.000237 10.667,19 L11,19 L11,23.5 C11,23.7761424 11.2238576,24 11.5,24 L15.5,24 C15.7761424,24 16,23.7761424 16,23.5 L16,18.5 C16,18.2238576 16.2238576,18 16.5,18 L19.5,18 C19.7761424,18 20,18.2238576 20,18.5 L20,23.5 C20,23.7761424 20.2238576,24 20.5,24 L24.5,24 C24.7761424,24 25,23.7761424 25,23.5 L25,19 L25.333,19 C25.4656989,19.000237 25.5930493,18.9477139 25.687,18.854 L26.666,17.875 C26.7655371,17.7755868 26.821467,17.6406792 26.821467,17.5 C26.821467,17.3593208 26.7655371,17.2244132 26.666,17.125 Z"/>
+  </g>
+</svg>
